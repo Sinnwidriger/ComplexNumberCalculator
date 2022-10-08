@@ -1,0 +1,9 @@
+﻿namespace ComplexNumberCalculator
+{
+    public class Program
+    {
+        private static void Main(string[] args)
+        {
+        }
+    }
+}
