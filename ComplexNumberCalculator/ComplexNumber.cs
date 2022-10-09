@@ -12,9 +12,17 @@
 
         public ComplexNumber(string input)
         {
-            Tuple<double, double> numberPair = parseComplexNumber(input);
-            this.RealPart = numberPair.Item1;
-            this.ImaginaryPart = numberPair.Item2;
+            try
+            {
+                Tuple<double, double> numberPair = parseComplexNumber(input);
+                this.RealPart = numberPair.Item1;
+                this.ImaginaryPart = numberPair.Item2;
+            }
+            catch
+            {
+                Console.WriteLine($"Number \"{input}\" cannot be parsed");
+                Environment.Exit(0);
+            }
         }
 
         #endregion Constructor
