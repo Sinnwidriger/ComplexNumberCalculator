@@ -10,12 +10,20 @@
             this.ImaginaryPart = imaginaryPart;
         }
 
+        public ComplexNumber(string input)
+        {
+            Tuple<double, double> numberPair = parseComplexNumber(input);
+            this.RealPart = numberPair.Item1;
+            this.ImaginaryPart = numberPair.Item2;
+        }
+
         #endregion Constructor
 
         #region Properties
 
         public double RealPart { get; set; }
         public double ImaginaryPart { get; set; }
+        public static int Precision { get; set; } = 2;
 
         #endregion Properties
 
@@ -104,9 +112,31 @@
 
         public override string ToString()
         {
-            return $"{this.RealPart} + {this.ImaginaryPart}i";
+            string op = this.ImaginaryPart >= 0 ? "+" : "";
+
+            return string.Format(
+                $"{{0:F{Precision}}}{op}{{1:F{Precision}}}i",
+                this.RealPart,
+                this.ImaginaryPart
+            );
         }
 
         #endregion Overriden Methods
+
+        #region Private Methods
+
+        private Tuple<double, double> parseComplexNumber(string input)
+        {
+            input = input.Replace(' ', '\0'); // Remove spaces for proper work
+            input = input.Replace('i', '\0');
+            int sign = input.Contains('-') ? -1 : 1;
+
+            char[] separators = new char[] { '+', '-' };
+            string[] splited = input.Split(separators, 2, StringSplitOptions.RemoveEmptyEntries);
+
+            return new Tuple<double, double>(Double.Parse(splited[0]), sign * Double.Parse(splited[1]));
+        }
+
+        #endregion Private Methods
     }
 }

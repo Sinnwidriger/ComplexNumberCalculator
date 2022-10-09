@@ -4,9 +4,7 @@
     {
         private static void Main(string[] args)
         {
-            ComplexNumber n1 = new ComplexNumber(3, 4);
-            ComplexNumber n2 = new ComplexNumber(5, 6);
-            Console.WriteLine(n1.Divide(n2));
+            Console.WriteLine(new ComplexNumber(args[0]));
         }
     }
 }
