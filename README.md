@@ -1,5 +1,4 @@
 # ComplexNumberCalculator
-=========================
 
 CLI calculator for complex numbers
 ----------------------------------
