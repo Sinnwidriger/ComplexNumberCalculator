@@ -17,7 +17,7 @@ $ .\ComplexNumberCalculator "<expression>"
 ```
 
 All parts of expression should be surrounded with round braces. Example: ```(3+4i)*(1+2i)```.
-Complex numbers should be represented with real part following be imaginary part.
+Complex numbers should be represented with real part following by imaginary part.
 
 It's possible to use basic 5 operators (+ - * / ^).
 Calculation will be consecutive. That means that operator "*" or "/" would not have priority.
