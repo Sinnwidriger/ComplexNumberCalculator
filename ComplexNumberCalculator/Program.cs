@@ -13,7 +13,9 @@
 
             if (args[0] == "--help")
             {
-                Console.WriteLine("Here is your help");
+                Console.WriteLine("For help open the following link:");
+                Console.WriteLine("https://github.com/Sinnwidriger/ComplexNumberCalculator/blob/master/README.md");
+                Console.WriteLine();
                 Environment.Exit(0);
             }
 
