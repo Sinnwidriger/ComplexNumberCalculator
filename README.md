@@ -29,5 +29,5 @@ Additional arguments
 
 Optionally can be set flag -p to set precision. Example:
 ```
-.\ComplexNumberCalculator "<expression>" -p 4
+$ .\ComplexNumberCalculator "<expression>" -p 4
 ```
