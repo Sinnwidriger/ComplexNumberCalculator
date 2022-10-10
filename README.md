@@ -13,7 +13,7 @@ In folder ```ComplexNumberCalculator\ComplexNumberCalculator\bin\Debug\net6.0```
 
 Open PowerShell and run it with arguments:
 ```
-.\ComplexNumberCalculator "<expression>"
+$ .\ComplexNumberCalculator "<expression>"
 ```
 
 All parts of expression should be surrounded with round braces. Example: ```(3+4i)*(1+2i)```.
