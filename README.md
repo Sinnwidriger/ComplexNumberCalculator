@@ -31,3 +31,4 @@ Optionally can be set flag -p to set precision. Example:
 ```
 $ .\ComplexNumberCalculator "<expression>" -p 4
 ```
+That means 4 numbers after floating point.
