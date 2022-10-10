@@ -9,7 +9,7 @@ dotnet build
 
 # How to use:
 
-In folder ```ComplexNumberCalculator\ComplexNumberCalculator\bin\Debug\net6.0``` you can find executable ComplexNumberCalculator.exe
+In folder ```ComplexNumberCalculator\ComplexNumberCalculator\bin\Debug\net6.0``` you can find executable ```ComplexNumberCalculator.exe```
 
 Open PowerShell and run it with arguments:
 ```
