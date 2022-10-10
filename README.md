@@ -11,6 +11,7 @@ dotnet build
 
 In folder ```ComplexNumberCalculator\ComplexNumberCalculator\bin\Debug\net6.0``` you can find executable ComplexNumberCalculator.exe
 
+Open PowerShell and run it with arguments:
 ```
 .\ComplexNumberCalculator "<expression>"
 ```
